@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Tahoma", sans-serif;
+}
+
+#header {
+    background-color: dimgray;
+    height: 4rem;
+    border-bottom: 3rem solid LightCoral;
+
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+#header h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: LightCoral;
+    width: 13rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+#title {
+    background-color: lightgray;
+    height: 28rem;
+    text-align: center;
+}
+
+#about {
+    display: flex;
+}
+
+#about img {
+    height: 23.5rem;
+}
+
+
+#fav ol {
+    display: flex;
+    justify-content: space-evenly;
+}
