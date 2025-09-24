@@ -9,7 +9,7 @@ body {
 #header {
     background-color: dimgray;
     height: 4rem;
-    border-bottom: 3rem solid LightCoral;
+    border-bottom: .3rem solid LightCoral;
 }
 
 #header h1 {
@@ -32,10 +32,9 @@ h3 {
 }
 
 #about {
-    /* display: flex; */
-
-    text-align: center;
+    display: flex;
     justify-content: center;
+    gap: 2rem;
 }
 
 #about img {
