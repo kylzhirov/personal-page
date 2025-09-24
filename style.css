@@ -10,10 +10,6 @@ body {
     background-color: dimgray;
     height: 4rem;
     border-bottom: 3rem solid LightCoral;
-
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
 }
 
 #header h1 {
@@ -36,15 +32,22 @@ h3 {
 }
 
 #about {
-    display: flex;
+    /* display: flex; */
+
+    text-align: center;
+    justify-content: center;
 }
 
 #about img {
     height: 23.5rem;
 }
 
-
 #fav ol {
     display: flex;
     justify-content: space-evenly;
+}
+
+#wish {
+    text-align: center;
+    padding-bottom: 7rem;
 }
