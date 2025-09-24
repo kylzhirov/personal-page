@@ -42,10 +42,12 @@ h3 {
     height: 23.5rem;
 }
 
-#fav ol {
+#fav .fav-lists {
     display: flex;
     justify-content: space-evenly;
 }
+
+
 
 #wish {
     text-align: center;
