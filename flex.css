@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url("https://cdn.imgchest.com/files/j7mmcr5k976.png");
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-shrink: 0;
+    gap: 21px;
+}
+.container > * {
+    flex-grow: 1;
+    height: 200px;
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+}
+
+.box1 { flex-basis: 18.75%; }
+.box2, .box3 { flex-basis: 39.1%; }
+.box4 { flex-basis: 100% }
+.box5 { flex-basis: 77.1% }
+.box6 { flex-basis: 21.4% }
+
