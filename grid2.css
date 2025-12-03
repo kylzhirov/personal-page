@@ -12,48 +12,74 @@ body {
     opacity: .5;
     color: blue;
 }
+
 .container {
     display: grid;
     grid-template-rows:
-        minmax(100px, 200px)
-        minmax(30px, 50px)
-        minmax(40px, 56px)
-        minmax(25px, 38px)
-        minmax(50px, 75px)
-        minmax(80px, 120px)
-        minmax(150px, 240px)
-        minmax(45px, 70px)
-        minmax(300px, 440px);
+        minmax(200px, auto)
+        minmax(50px, auto)
+        minmax(55px, auto)
+        minmax(0px, 39px)
+        minmax(75px, auto)
+        minmax(120px, auto)
+        minmax(240px, auto)
+        minmax(70px, auto)
+        minmax(439px, auto);
     grid-template-columns:
-        minmax(150px, 200px)
-        minmax(200px, 315px);
+        minmax(530px, auto)
+        minmax(50px, auto);
     grid-template-areas: 
-        "one one one one"
-        "two two two two"
-        "three three three three"
-        "four four four four "
-        "five five five five "
-        "six six six ten"
-        "seven seven seven ten"
-        "eight eight eight ten"
-        "nine nine nine eleven"
-        "nine nine nine eleven"
+        "one one"
+        "two two"
+        "three three"
+        "four four"
+        "five five"
+        "six ten"
+        "seven ten"
+        "eight ten"
+        "nine eleven"
+        "nine eleven"
 }
+
 .container > * {
     border: 2px dashed blue;
-    border: 2px dashed rgba(0, 0, 255, 0.6);
 }
+
+@media (max-width: 500px) {
+    .container {
+
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven"
+            "eight"
+            "nine"
+            "ten"
+            "eleven";
+    }
+}
+
+
 .box1 {
     grid-area: one;
 }
+
 .box2 {
     grid-area: two;
 }
+
 .box3 {
     grid-area: three;
     display: flex;
     justify-content: end;
 }
+
 .box3 ul {
     list-style: none;
     font-size: 14px;
@@ -63,6 +89,8 @@ body {
     display: flex;
     gap: 19.8px;
     align-items: center;
+
+
 }
 
 .box3 li:nth-child(4) {
@@ -70,7 +98,7 @@ body {
 }
 .box3 li:nth-child(1),
 .box3 li:nth-child(2) {
-    transform: translateX(-21px);
+    transform: translateX(-20px);
 }
 
 .box4 {
