@@ -81,6 +81,7 @@ body {
 }
 
 .box3 ul {
+    flex-wrap: wrap;
     list-style: none;
     font-size: 14px;
     padding-bottom: 1px;
