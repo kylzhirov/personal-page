@@ -64,8 +64,11 @@ body {
     }
 }
 
-.box1 {
+.main-logo {
     grid-area: one;
+    background: url(images/logo-house-kg.6df937c9.svg) no-repeat 20px 14px;
+    background-color: red;
+    background-size: 230px auto;
 }
 
 .box2 {
@@ -94,9 +97,6 @@ body {
     border-bottom: 1px solid black;
 }
 
-.box6 {
-    grid-area: six;
-}
 
 .box4 {
     grid-area: four;
