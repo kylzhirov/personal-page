@@ -1,110 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 7</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="final.css"/>
-  </head>
-  <body>
-  <img src='https://cdn.imgchest.com/files/pyvdcdqz5yk.png' style='position: absolute; top:0; left:0;z-index:-1'>
-  <div class="container">
-    <div class="box1">1</div>
-    <div class="box2">
-        <span>2</span>
-        <div class="portal-switcher">
-            <a class="bazarkg" href="https://www.bazar.kg" target="_blank" title="Базар"><span class="hidden-font">Bazar</span></a>
-            <a class="mashinakg" href="https://www.mashina.kg" target="_blank" title="Машина"><span class="hidden-font">Mashina</span></a>
+    <link rel="stylesheet" href="final.css" />
+</head>
+
+<body>
+    <img src='https://cdn.imgchest.com/files/pyvdcdqz5yk.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">
+            <span>2</span>
+            <div class="portal-switcher">
+                <a class="bazarkg" href="https://www.bazar.kg" target="_blank" title="Базар"><span
+                        class="hidden-font">Bazar</span></a>
+                <a class="mashinakg" href="https://www.mashina.kg" target="_blank" title="Машина"><span
+                        class="hidden-font">Mashina</span></a>
+            </div>
+
+            <div class="right-sub-menu">
+                <ul>
+                    <li class="sub-language-switcher">
+                        <a href="" class="ls-link">ENG</a>
+                    </li>
+
+                    <li>
+                        <a href="" class="lk-link">Login Registration</a>
+                    </li>
+
+                    <li>
+                        <a href="" class="lv-link">To add an advert</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div class="right-sub-menu">
+        <div class="box3">
+            <div class="main-logo"></div>
             <ul>
-                <li class="sub-language-switcher">
-                    <a href="" class="ls-link">ENG</a>
-                </li>
-
-                <li>
-                    <a href="" class="lk-link">Login Registration</a>
-                </li>
-
-                <li>
-                    <a href="" class="lv-link">To add an advert</a>
-                </li>
+                <li>Sale</li>
+                <li>Rent</li>
+                <li class="on-the-map-button">On the map</li>
+                <li>Real Estate Verification</li>
+                <li>Daily</li>
+                <li>Companies</li>
+                <li>New buildings</li>
+                <li>Analytics</li>
+                <li class="urgently-button">Urgently</li>
             </ul>
         </div>
-    </div>
-    <div class="box3">
-        <div class="main-logo"></div>
-         <ul>
-            <li>Sale</li>
-            <li>Rent</li>
-            <li class="on-the-map-button">On the map</li>
-            <li>Real Estate Verification</li>
-            <li>Daily</li>
-            <li>Companies</li>
-            <li>New buildings</li>
-            <li>Analytics</li>
-            <li class="urgently-button">Urgently</li>
-        </ul>
-    </div>
-    <div class="box4">
-        <h1>Sell and buy real estate in Kyrgyzstan</h1>
+        <div class="box4">
+            <h1>Sell and buy real estate in Kyrgyzstan</h1>
 
-        <div class="flexed-right">
-            <a class="rek-people-link" href="">
-                <b>Advertisers</b>
-            </a>
+            <div class="flexed-right">
+                <a class="rek-people-link" href="">
+                    <b>Advertisers</b>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="box5">
-        <form class="quick-search-form">
-            <div class="qs-inner">
-                <div class="qs-fields">
-                    <select class="type">
-                        <option>Buy</option>
-                        <option>Rent</option>
-                    </select>
+        <div class="box5">
+            <form class="quick-search-form">
+                <div class="qs-inner">
+                    <div class="qs-fields">
+                        <select class="type">
+                            <option>Buy</option>
+                            <option>Rent</option>
+                        </select>
 
-                    <select class="category">
-                        <option>Property type</option>
-                    </select>
+                        <select class="category">
+                            <option>Property type</option>
+                        </select>
 
-                    <select class="rooms">
-                        <option>Number of rooms</option>
-                    </select>
+                        <select class="rooms">
+                            <option>Number of rooms</option>
+                        </select>
 
-                    <input type="text" placeholder="I'm looking for…" />
+                        <input type="text" placeholder="I'm looking for…" />
+                    </div>
+
+                    <div class="qs-buttons">
+                        <button class="btn show-map">To show on the map</button>
+                        <button class="btn primary-search">Find</button>
+                    </div>
                 </div>
+            </form>
+        </div>
+        <div class="box6">6</div>
+        <div class="box7">
+            <div class="title">
+                <span>Companies</span>
+                <a class="btn all-companies-btn" href="">All companies</a>
+            </div>
 
-                <div class="qs-buttons">
-                    <button class="btn show-map">To show on the map</button>
-                    <button class="btn primary-search">Find</button>
+
+            <div class="business-main-block">
+                <ul id="indicator">
+                    <li class="prev active" style="z-index: 10;"></li>
+                    <li class="next active" style="z-index: 10;"></li>
+                </ul>
+                <div class="business-slider-wrapper">
+                    <div class="business-main-item">
+                        <a class="account-logo" href="" title="">
+                            <img class="visible" alt=""
+                                src="https://cdn.house.kg/house/dealers/6e6dfd1f7e4143dbe33c0b4849fc1cc6_logo.jpg"
+                                style="">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </form>
-    </div>
-    <div class="box6">6</div>
-    <div class="box7">
-        <div class="title">
-            <span>Companies</span>
-            <a class="btn all-companies-btn" href="">All companies</a>
         </div>
-    </div>
-    <div class="box8">
-        <a class="btn btn-primary create-business-account" href="">Create a business account</a>
-        <a class="btn btn-primary request-a-call-back" href="">Request a call back</a>
-    </div>
-    <div class="box9">
-        <div class="title">
-            <span>Property For Sale</span>
-            <a class="btn all-ads-btn" href="">All ads for sale</a>
+        <div class="box8">
+            <a class="btn btn-primary create-business-account" href="">Create a business account</a>
+            <a class="btn btn-primary request-a-call-back" href="">Request a call back</a>
         </div>
+        <div class="box9">
+            <div class="title">
+                <span>Property For Sale</span>
+                <a class="btn all-ads-btn" href="">All ads for sale</a>
+            </div>
 
+            <div class="category-block-content">
+                <div class="category-block-item">
+                    <div class="pic">
+                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                            alt="img1">
+                    </div>
+                    <div class="price">
+                        <span class="price-in-dollars">$210,000</span>
+                        <span class="price-in-soms">17,720,157 s</span>
+                    </div>
+                    <div class ="city">
+                        <span class="city-span">Bishkek</span>
+                    </div>
+                    <div class="main-title">4-room sq.. 210 m2, 1st floor o..</div>
+                    <div class="main-isvip"></div>
+                </div>
+                <div class="category-block-item">
+                    <div class="pic">
+                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                            alt="img1">
+                    </div>
+                    <div class="price">
+                        <span class="price-in-dollars">$14,000</span>
+                        <span class="price-in-soms">1,181,344 s</span>
+                    </div>
+                    <div class="city">
+                        <span class="city-span">With. Kuntuu</span>
+                    </div>
+                    <div class="main-title">House, 1 room, 20 m2</div>
+                    <div class="main-isvip"></div>
+                </div>
+                <div class="category-block-item">
+                    <div class="pic">
+                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                            alt="img1">
+                    </div>
+                    <div class="price">
+                        <span class="price-in-dollars">$27,000</span>
+                        <span class="price-in-soms">2,278,306 s</span>
+                    </div>
+                    <div class="main-title">1-room sq., 38 m2, 7th floor ou...</div>
+                    <div class="main-isvip"></div>
+                </div>
+                <div class="category-block-item">
+                    <div class="pic">
+                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                            alt="img1">
+                    </div>
+                    <div class="city">
+                        <span class="city-span">Bishkek</span>
+                    </div>
+                    <div class="price">
+                        <span class="price-in-dollars">$33,000</span>
+                        <span class="price-in-soms">2,784,596 s</span>
+                    </div>
+                    <div class="main-title">3-room sq., 65m2, 4th floor of 4</div>
+                    <div class="main-isvip"></div>
+                </div>
+                <div class="category-block-item">
+                    <div class="pic">
+                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                            alt="img1">
+                    </div>
+                    <div class="city">
+                        <span class="city-span">Bishkek</span>
+                    </div>
+                    <div class="price">
+                        <span class="price-in-dollars">$109,500</span>
+                        <span class="price-in-soms">9,239,796 s</span>
+                    </div>
+                    <div class="main-title">3-room sq., 103 m2, 1st floor o...</div>
+                    <div class="main-isvip"></div>
+                </div>
+                <div class="category-block-item">
+                    <div class="pic">
+                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                            alt="img1">
+                    </div>
+                    <div class="city">
+                        <span class="city-span">Bishkek</span>
+                    </div>
+                    <div class="price">
+                        <span class="price-in-dollars">$74,877</span>
+                        <span class="price-in-soms">6,318,249 s</span>
+                    </div>
+                    <div class="main-title">3-room sq., 102.57 m2, 12th fl...</div>
+                    <div class="main-isvip"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box10">10</div>
+        <div class="box11">11</div>
     </div>
-    <div class="box10">10</div>
-    <div class="box11">11</div>
-    </div>
-  </body>
+</body>
+
 </html>

@@ -29,7 +29,7 @@ body {
         minmax(70px, auto)
         minmax(439px, auto);
     grid-template-columns:
-        minmax(530px, auto)
+        minmax(0, 0.774fr)
         minmax(50px, auto);
     grid-template-areas: 
         "one one"
@@ -380,8 +380,8 @@ body {
     grid-area: six;
     background-image: url(images/2025-12-21-161956_hyprshot.png);
     background-repeat: no-repeat;
-    background-size: 720px auto;
-    background-position: 19px 18px;
+    background-size: 715px auto;
+    background-position: 20px 18px;
 }
 .box7 {
     grid-area: seven;
@@ -390,7 +390,6 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 .box7 span {
     font-size: 20px;
     font-weight: 700;
@@ -402,10 +401,63 @@ body {
     display: flex;
     font-size: 14px;
     align-items: center;
-    padding-right: 35px;
-    padding-bottom: 4px;
+    padding-right: 36px;
     text-decoration: none;
     color: #5fbaed;
+}
+.box7 .business-main-block {
+    position: relative;
+    height: 200px;
+}
+.business-main-block img {
+    visibility: hidden;
+}
+
+#indicator {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    z-index: 10;
+}
+
+#indicator li {
+    position: relative;
+    width: 60px;
+    height: 42%;
+}
+#indicator > li::before {
+    background-repeat: no-repeat;
+    background-position: 10px 9px;
+}
+#indicator > li.next::before {
+    background-image: url(images/angle-right.e79c06ce.svg);
+}
+#indicator > li.prev::before {
+    background-image: url(images/angle-left.ef254ea7.svg);
+}
+
+#indicator li::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-10%, -49%);
+}
+
+.business-slider-wrapper {
+    height: 100%;
 
 }
 .box8 {
@@ -439,30 +491,108 @@ body {
 
     border-radius: 3px;
 }
-.box9 > .title {
-    height: 50px;
+.box9 {
     grid-area: nine;
+}
+.box9 > .title {
+    height: 61px;
     display: flex;
     align-items: center;
 }
-.box9 span {
+.title > span {
     padding-left: 25px;
-    padding-top: 3px;
+    padding-bottom: 5px;
     color: black;
-    font-size: 19px;
+    font-size: 18px;
+    font-family: Pt Sans,Helvetica;
     font-weight: 700;
 }
 .box9 .all-ads-btn {
-    padding-right: 34px;
-    padding-top: 7px;
+    padding-right: 35px;
     color: #008fdd;
 }
 
-.box9 .items-collection {
+.box9 .category-block-content {
+    padding-left: 3px;
+
     display: flex;
     flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
 }
 
+.category-block-item {
+    flex: 0 0 223px;
+
+    height: auto;
+    display: grid;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.category-block-item > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.category-block-item .pic img {
+    opacity: 0;
+    max-width: 100%;
+    height: 173px;
+
+    display: block;
+}
+.category-block-item .price {
+    height: 10%;
+    padding-left: 1px;
+    display: flex;
+    justify-content: start;
+}
+.category-block-item .price-in-dollars {
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.category-block-item .price-in-soms {
+    padding-left: 11px;
+    align-self: end;
+    color: white;
+    font-size: 11px;
+}
+.category-block-item .city {
+    height: 10%;
+    flex-basis: 10%;
+    position: relative;
+    top: -1px;
+    left: 1px;
+}
+.category-block-content span {
+    padding-left: 6px;
+    padding-bottom: 1px;
+}
+.category-block-content .city > span {
+    font-size: 12px;
+    color: white;
+}
+.category-block-item .main-title {
+    align-self: end;
+    justify-self: start;
+    color: white;
+    margin: 8px;
+    padding-bottom: 2px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.category-block-item .main-isvip {
+    height: 32px;
+    width: 32px;
+    background-image: url(images/crown-icon.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -10px;
+    bottom: -4px;
+    z-index: 10;
+}
 
 .box10 {
     grid-area: ten;
