@@ -42,7 +42,10 @@
         </div>
         <div class="box3">
             <div class="main-logo"></div>
-            <ul>
+
+            <button class="hamburger-btn">☰</button>
+
+            <ul class="navigation-bar">
                 <li>Sale</li>
                 <li>Rent</li>
                 <li class="on-the-map-button">On the map</li>
@@ -270,6 +273,14 @@
                 if (style.getAttribute('href') == 'style.css') style.setAttribute('href', 'style2.css');
                 else style.setAttribute('href', 'style.css');
             }
+        </script>
+        <script>
+            const navBar = document.querySelector('.navigation-bar');
+            const hamburgerBtn = document.querySelector('.hamburger-btn');
+
+            hamburgerBtn.addEventListener('click', () => {
+                navBar.classList.toggle('hamburger-menu');
+            });
         </script>
     </div>
 </body>

@@ -646,3 +646,8 @@ body {
     background-position: 3px 16px;
 }
 
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+}
