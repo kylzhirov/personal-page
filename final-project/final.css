@@ -386,16 +386,16 @@ body {
 .box7 {
     grid-area: seven;
 }
-.title {
+.box7 .title {
     display: flex;
     justify-content: space-between;
 }
-.box7 span {
-    font-size: 20px;
+.box7 .title > span {
     font-weight: 700;
+    font-size: 19px;
     color: black;
-    padding-left: 26px;
-    padding-top: 1px;
+    padding-left: 25px;
+    padding-top: 5px;
 }
 .box7 .all-companies-btn {
     display: flex;
@@ -406,12 +406,44 @@ body {
     color: #5fbaed;
 }
 .box7 .business-main-block {
-    position: relative;
     height: 200px;
+    position: relative;
 }
-.business-main-block img {
-    visibility: hidden;
+.business-slider-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-top: 8px;
 }
+.business-main-item {
+    flex: 0 0 130.234px;
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-main-item img {
+    width: 100%;
+    height: auto;
+}
+.business-main-item .account-title {
+    text-decoration: none;
+    color: #1296d8;
+    margin-top: -5px;
+    font-size: 12px;
+}
+.business-main-item .number-of-ads {
+    text-decoration: none;
+    color: #1296d8;
+    padding-top: 16px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 
 #indicator {
     position: absolute;
@@ -457,7 +489,7 @@ body {
 }
 
 .business-slider-wrapper {
-    height: 100%;
+    height: auto;
 
 }
 .box8 {
@@ -495,7 +527,7 @@ body {
     grid-area: nine;
 }
 .box9 > .title {
-    height: 61px;
+    height: 63px;
     display: flex;
     align-items: center;
 }
