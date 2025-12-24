@@ -5,12 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 7</title>
+    <title>Final project</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link class="style" rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
     <img src='https://cdn.imgchest.com/files/pyvdcdqz5yk.png' style='position: absolute; top:0; left:0;z-index:-1'>
     <div class="container">
         <div class="box1">1</div>
@@ -173,7 +174,7 @@
             <div class="category-block-content">
                 <div class="category-block-item">
                     <div class="pic">
-                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                        <img src="https://cdn.house.kg/house/images/e/1/a/e1a6f2f872505100d160e911edde80c9_240x180.jpg"
                             alt="img1">
                     </div>
                     <div class="price">
@@ -188,7 +189,7 @@
                 </div>
                 <div class="category-block-item">
                     <div class="pic">
-                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                        <img src="https://cdn.house.kg/house/images/3/2/d/32d8016ab23f28c66fcde9ab3b47fc9f_240x180.jpg"
                             alt="img1">
                     </div>
                     <div class="price">
@@ -203,7 +204,7 @@
                 </div>
                 <div class="category-block-item">
                     <div class="pic">
-                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                        <img src="https://cdn.house.kg/house/images/3/8/4/384b47f4751a873d5149a13698d17ad9_240x180.jpg"
                             alt="img1">
                     </div>
                     <div class="price">
@@ -215,7 +216,7 @@
                 </div>
                 <div class="category-block-item">
                     <div class="pic">
-                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                        <img src="https://cdn.house.kg/house/images/6/f/8/6f84fed28645db57e3bec7c2e75c0fb7_240x180.jpg"
                             alt="img1">
                     </div>
                     <div class="city">
@@ -230,7 +231,7 @@
                 </div>
                 <div class="category-block-item">
                     <div class="pic">
-                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                        <img src="https://cdn.house.kg/house/images/8/5/6/856fdf32986b58090754ba9a74b1fa7e_240x180.jpg"
                             alt="img1">
                     </div>
                     <div class="city">
@@ -245,7 +246,7 @@
                 </div>
                 <div class="category-block-item">
                     <div class="pic">
-                        <img src="https://cdn.house.kg/house/images/0/e/0/0e088a42f3e0eacdc64a9edd6cdf41ce_240x180.jpg"
+                        <img src="https://cdn.house.kg/house/images/5/3/3/533f1538c5b0d6724e561ca6b492cd23_240x180.jpg"
                             alt="img1">
                     </div>
                     <div class="city">
@@ -262,6 +263,14 @@
         </div>
         <div class="box10">10</div>
         <div class="box11">11</div>
+
+        <script>
+            function switchStyle() {
+                let style = document.querySelector('.style');
+                if (style.getAttribute('href') == 'style.css') style.setAttribute('href', 'style2.css');
+                else style.setAttribute('href', 'style.css');
+            }
+        </script>
     </div>
 </body>
 

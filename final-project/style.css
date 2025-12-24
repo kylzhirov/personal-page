@@ -559,7 +559,6 @@ body {
     height: auto;
     display: grid;
     border-radius: 4px;
-    overflow: hidden;
     position: relative;
 }
 .category-block-item > * {
@@ -567,12 +566,18 @@ body {
     grid-row: 1 / 2;
 }
 .category-block-item .pic img {
-    opacity: 0;
     max-width: 100%;
     height: 173px;
 
+    transform: translateY(-6px);
     display: block;
+    z-index: -1;
 }
+.category-block-item > :not(.pic) {
+    position: relative;
+    z-index: 1;
+}
+
 .category-block-item .price {
     height: 10%;
     padding-left: 1px;
