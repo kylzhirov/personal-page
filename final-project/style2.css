@@ -642,6 +642,17 @@ body {
     .box3 ul li {
         color: black;
     }
+    .box3 {
+        background-image: url(images/logo-house-kg.6df937c9.svg);
+        background-repeat: no-repeat;
+        background-size: 200px auto;
+        width: 50%;
+        background-position: center center;
+
+    }
+    .main-logo {
+        visibility: hidden;
+    }
     .mobile-navigation {
         background-color: transparent;
         position: fixed;
