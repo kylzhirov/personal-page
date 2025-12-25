@@ -683,6 +683,17 @@ body {
         width: 140px;
         margin-top: -6px;
     }
+    .box9 {
+        width: 50%;
+        min-height: 20px;
+    }
+    .category-block-item .pic img {
+        height: 100%;
+    }
+    .category-block-content {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .navigation-bar.hamburger-menu {
         display: flex;
@@ -699,7 +710,6 @@ body {
             "box7"
             "box8"
             "box9"
-            "box10"
             "box11";
         grid-template-columns: 1fr;
     }
