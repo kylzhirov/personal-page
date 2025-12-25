@@ -618,8 +618,15 @@ body {
         min-height: 410px;
     }
     .box3 {
-        justify-content: start;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .box3-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
     .box3 ul {
         display: none;
@@ -632,9 +639,6 @@ body {
 
     .hamburger-btn {
         display: block;
-        margin-left: 0;
-
-
         background-color: white;
         color: black;
     }
